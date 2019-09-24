@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midterm1</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			grid-area: head;
+			flex-grow: 1;
+		}
+		.main{
+			grid-area: main;
+			flex-grow: 1;
+		}
+		.menu{
+			grid-area: menu;
+			display: flex;
+		}
+		.menu div{
+			align-items: center;
+		}
+		.footer{
+			grid-area: footer;
+			margin-top: 20px;
+			margin-left: 20px;
+			width: 750px;
+		}
+		.content{
+			display: grid;
+			grid-template-areas: 
+				'head main main main main main'
+				'menu menu menu menu menu menu'
+				'footer footer footer footer footer footer';
+			margin-left: 200px;
+			margin-top: 20px;
+		}
+		button{
+			border: 1px solid black;
+			border-color: #7bbd42; 
+			background-color: #7bbd42;
+			height: 50px;
+			color: white;
+			align-items: center;
+		}
+		.menu div{
+			border: 1px solid grey; 
+			margin-left: 20px; 
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="header">
+			<img src="bupbe.png"/ style="margin-left: 50px;">
+		</div>
+		<div class="main" >
+			<div style="border-bottom: 2px solid grey;">
+				<h2>BÚP BÊ</h2>
+			</div>
+			<br>
+			<p>100000đ</p><br>
+			<p>Nhà sản xuất: GUCCI</p><br>
+			<P>Mã sản phẩm: product01</P><br>
+			<p>Điểm thưởng: 100</p><br>
+			<p>Số lượng trong kho: 990</p><br>
+			<div style="display: flex; ">
+				<input type="number" style="border:1px solid black; width: 50px; height: 50px;"/>
+				<button ><b>Thêm vào giỏ</b></button>
+			</div>
+			<div>
+
+				<button style="margin-top: 20px;"><img src="tim.png"><b>Add to wishlist</b></button>
+			</div>
+			<br>
+			<button style="margin-top: 20px;"><img src="dh.png"><b>Compare</b></button>
+			<p>Danh mục: Đồ chơi búp bê</p>
+		</div>
+		<div class="menu">
+			<div>MÔ TẢ</div>
+			<div>HƯỚNG DẪN MUA HÀNG</div>
+			<div>ĐÁNH GIÁ</div>
+		</div>
+		<div class="footer">
+			<p style="font-size: 30px">Mô tả sản phẩm</p>
+			<br>
+			<p style="font-size: 20px;">Set ut perspiciatis unde omnis iste natus error sit vluptatem accusantium doloremque laudantium, totam rem aperiam ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae sunt explicabo. Nemo enim ipsam</p>
+		</div>
+	</div>
+</body>
+</html>
